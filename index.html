@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Apeió Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    .search-bar {
+      text-align: center;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .search-bar input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .search-bar button {
+      padding: 10px 15px;
+      margin-left: 10px;
+      background-color: #111;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      color: #444;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-meta {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .profile img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .profile-info {
+      font-size: 0.95rem;
+    }
+
+    .profile-info h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .profile-info p {
+      margin: 0.2rem 0;
+      color: #666;
+    }
+
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <center><header>apeió</header></center>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar conteúdo...">
+    <button>🔍 Buscar</button>
+  </div>
+
+  <div class="section">
+    <h2>Street Kpop Hall</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="img01.png" alt="Kdrama">
+        <div class="card-content">
+          <div class="card-title">Pleasant Journey: Emotions from a Kdrama</div>
+          <div class="card-meta">👁️ 2.3k views</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img02.png" alt="Pop Idol">
+        <div class="card-content">
+          <div class="card-title">Chinese Pop Idol</div>
+          <div class="card-meta">👁️ 1.8k views</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Pop Culture</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="img08.png" alt="Kpop Cat Day">
+        <div class="card-content">
+          <div class="card-title">Kpop Cat Day</div>
+          <div class="card-meta">👁️ 3.1k views</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img07.png" alt="Tz Masters">
+        <div class="card-content">
+          <div class="card-title">Tz Masters</div>
+          <div class="card-meta">👁️ 2.7k views</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="profile">
+      <img src="img03.png" alt="Profile">
+      <div class="profile-info">
+        <h3>Life's click Robt Andi</h3>
+        <p>Followers: 1.2k</p>
+      </div>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <img src="img05.png" alt="Page Highs">
+        <div class="card-content">
+          <div class="card-title">Page Highs</div>
+          <div class="card-meta">👁️ 900 views</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img06.png" alt="Pop Journal">
+        <div class="card-content">
+          <div class="card-title">Pop Journal: Finding Kpop</div>
+          <div class="card-meta">👁️ 1.5k views</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 apeió. Todos os direitos reservados.</p>
+    <p>
+      <a href="/sobre">Sobre</a> |
+      <a href="/contato">Contato</a> |
+      <a href="/privacidade">Privacidade</a>
+    </p>
+  </footer>
+
+</body>
+</html>
